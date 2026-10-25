@@ -59,3 +59,27 @@ main {
   border-radius: 12px;
   padding: 24px;
 }
+#desktop-tip {
+  display: none;
+}
+@media (pointer: coarse) and (max-width: 800px) {
+  #desktop-tip {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    padding: 10px 14px;
+    background: #1a1008;
+    color: #f4b223;
+    font: 14px/1.4 system-ui, sans-serif;
+  }
+  #desktop-tip button {
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 6px;
+    background: #f4b223;
+    color: #1a1008;
+  }
+}

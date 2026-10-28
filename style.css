@@ -44,11 +44,17 @@ body {
 main {
     flex: 1;
 }
-
-.footer {
-    margin: 0;
-    padding: 12px 0;
-    text-align: right;
+.footer_box {
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  background-color: #777;
+}
+.copyright {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #454552;
 }
 .rail { width: min(320px, 60vw); height: 2px; background: rgba(244, 178, 35, .2); }
 .bar  { height: 100%; width: 0; background: #f4b223; }

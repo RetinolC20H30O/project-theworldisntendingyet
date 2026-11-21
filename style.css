@@ -35,6 +35,8 @@ html { scroll-behavior: smooth; }
 .menu small { font-size: 10px; letter-spacing: .15em; color: #777; }
 .menu a:hover b { color: #e0a000; }
 
+.mail { margin-left: auto;}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -101,4 +103,23 @@ main {
   .menu small { display: none; }
   .menu a { white-space: nowrap; }
   .roundedcorner { padding: 16px; }
+}
+.contact-dialog {
+  border-radius: 12px;
+  padding: 24px;
+  max-width: min(360px, 88vw);
+  border: 2px solid #222;
+  font-family: system-ui, sans-serif;
+}
+#contact-dialog::backdrop { background: rgba(0, 0, 0, .5); }
+
+.dialog-buttons { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+.dialog-buttons button {
+  padding: 6px 14px; border: 1px solid #222; border-radius: 999px;
+  background: #fff; cursor: pointer;
+}
+#contact-agree { background: #f4b223; }
+#contact-agree:disabled {
+  background: #ddd;
+  color: #888;
 }

@@ -65,6 +65,12 @@ main {
 .bar  { height: 100%; width: 0; background: #f4b223; }
 
 .pct { font: 12px/1 system-ui, sans-serif; letter-spacing: .2em; opacity: .7; }
+.centernpadding {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
 .anybox{
     width: fit-content;
     height: fit-content;
